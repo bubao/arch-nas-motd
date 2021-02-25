@@ -176,7 +176,7 @@ else
 	upd_color="${reset}${white}"
 fi
 
-cpu=`cat /proc/cpuinfo | grep "name" | uniq | cut -d ":" -f2 | sed 's/ //;s/(TM)//;s/(R)//;s/CPU//'`
+cpu=`cat /proc/cpuinfo | grep "name" | uniq | cut -d ":" -f2 | sed 's/ //;s/(TM)//g;s/(R)//g;s/CPU//;s/  / /'`
 proc="${yellow}$PROCESS_ROOT${c1} (r), ${yellow}$PROCESS_USER${c1} (u) | ${yellow}$PROCESS_ALL${c1} (t)"
 
 echo -e "${white}${bold}--------------------------------------------------------------------------------
