@@ -137,7 +137,7 @@ else
 	upd_color="${reset}${white}"
 fi
 
-echo "
+echo -e "
 ${c0}                    -\`
 ${c0}                   .o+\`
 ${c0}                  \`ooo/		
